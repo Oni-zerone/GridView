@@ -63,7 +63,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73B50D64E38E4918303C7D94 /* Pods_GridView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74117FE091CD37A533A30578 /* Pods-GridView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GridView_Tests/Pods-GridView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8596C408A758249C004D39AE /* GridView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GridView.podspec; path = ../GridView.podspec; sourceTree = "<group>"; };
+		8596C408A758249C004D39AE /* SOTGridView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SOTGridView.podspec; path = ../SOTGridView.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ACE8DBC3F8A394EE46761AA /* Pods-GridView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GridView_Tests/Pods-GridView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9427F1E656A93DBC8B3B6A2B /* Pods-GridView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GridView_Example/Pods-GridView_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				8596C408A758249C004D39AE /* GridView.podspec */,
+				8596C408A758249C004D39AE /* SOTGridView.podspec */,
 				6AE5A2FA6BBBC62F00D721E8 /* README.md */,
 				D098506789EFF6C5D668651D /* LICENSE */,
 			);

@@ -1,16 +1,16 @@
 PODS:
-  - GridView (0.1.0)
+  - SOTGridView (0.1.0)
 
 DEPENDENCIES:
-  - GridView (from `../`)
+  - SOTGridView (from `../`)
 
 EXTERNAL SOURCES:
-  GridView:
+  SOTGridView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GridView: cb823b14a5976e98f90486f9be295ec522a4db13
+  SOTGridView: 11b8546ffe365e4a175cb48405154d123de028d6
 
-PODFILE CHECKSUM: a844f52d1197429fe79c412985b25b2942654a46
+PODFILE CHECKSUM: 816267d9b3512706a248a0b5579e7893c82a7682
 
 COCOAPODS: 1.1.1
