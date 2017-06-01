@@ -1,6 +1,6 @@
 # SOTGridView
 
-[![CI Status](http://img.shields.io/travis/acct<blob>=<NULL>/SOTGridView.svg?style=flat)](https://travis-ci.org/acct<blob>=<NULL>/GridView)
+[![CI Status](http://img.shields.io/travis/Oni-zerone/SOTGridView.svg?style=flat)](https://travis-ci.org/acct<blob>=<NULL>/GridView)
 [![Version](https://img.shields.io/cocoapods/v/SOTGridView.svg?style=flat)](http://cocoapods.org/pods/SOTGridView)
 [![License](https://img.shields.io/cocoapods/l/SOTGridView.svg?style=flat)](http://cocoapods.org/pods/SOTGridView)
 [![Platform](https://img.shields.io/cocoapods/p/SOTGridView.svg?style=flat)](http://cocoapods.org/pods/SOTGridView)
