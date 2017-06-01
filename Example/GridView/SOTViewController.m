@@ -7,23 +7,82 @@
 //
 
 #import "SOTViewController.h"
+#import "SOTDetailViewController.h"
 
-@interface SOTViewController ()
+#import "SOTGridView.h"
+#import "SOTCustomItem.h"
+
+@interface SOTViewController () <SOTGridViewDataSource, SOTGridViewDelegate>
+
+@property (weak, nonatomic) IBOutlet SOTGridView *gridView;
 
 @end
 
 @implementation SOTViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.gridView setContentMargins:UIEdgeInsetsMake(20, 10, 20, 10)];
+    [self.gridView setDataSource:self];
+    [self.gridView setDelegate:self];
 }
 
-- (void)didReceiveMemoryWarning
-{
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) reload:(id)sender {
+    [self.gridView reloadContents];
+}
+
+
+- (NSInteger)numberOfItemsInGridView:(SOTGridView *)gridView {
+    return 45;
+}
+
+- (SOTGridItem *_Nonnull) gridView:(SOTGridView *_Nonnull)gridView viewAtIndex:(NSInteger)index {
+    
+    SOTCustomItem *view = (SOTCustomItem *)[[[NSBundle mainBundle] loadNibNamed:@"SOTCustomItem" owner:self options:nil] firstObject];
+    NSLayoutConstraint *heightConstraint = [NSLayoutConstraint constraintWithItem:view
+                                                                        attribute:NSLayoutAttributeHeight
+                                                                        relatedBy:NSLayoutRelationEqual
+                                                                           toItem:nil
+                                                                        attribute:NSLayoutAttributeNotAnAttribute
+                                                                       multiplier:1
+                                                                         constant:((index % 5) * 10 + 80)];
+    
+    [view addConstraint:heightConstraint];
+    //    NSLayoutConstraint *widthConstraint = [NSLayoutConstraint constraintWithItem:view
+    //                                                                        attribute:NSLayoutAttributeWidth
+    //                                                                        relatedBy:NSLayoutRelationEqual
+    //                                                                           toItem:nil
+    //                                                                        attribute:NSLayoutAttributeNotAnAttribute
+    //                                                                       multiplier:1
+    //                                                                         constant:90];
+    //
+    //    [view addConstraint:widthConstraint];
+    
+    [view setBackgroundColor:[UIColor whiteColor]];
+    
+    return view;
+}
+
+- (void) gridView:(SOTGridView *)gridView didSelectItemAtIndex:(NSInteger)index {
+    
+    [self performSegueWithIdentifier:@"ShowDetail" sender:[NSNumber numberWithInteger:index]];
+    
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ShowDetail"]) {
+        SOTDetailViewController *detailController = (SOTDetailViewController *)segue.destinationViewController;
+        if(detailController.view) {
+            [detailController.detailLabel setText:[NSString stringWithFormat:@"%i", [(NSNumber *)sender intValue]]];
+        }
+    }
 }
 
 @end
