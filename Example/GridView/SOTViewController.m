@@ -55,16 +55,6 @@
                                                                          constant:((index % 5) * 10 + 80)];
     
     [view addConstraint:heightConstraint];
-    //    NSLayoutConstraint *widthConstraint = [NSLayoutConstraint constraintWithItem:view
-    //                                                                        attribute:NSLayoutAttributeWidth
-    //                                                                        relatedBy:NSLayoutRelationEqual
-    //                                                                           toItem:nil
-    //                                                                        attribute:NSLayoutAttributeNotAnAttribute
-    //                                                                       multiplier:1
-    //                                                                         constant:90];
-    //
-    //    [view addConstraint:widthConstraint];
-    
     [view setBackgroundColor:[UIColor whiteColor]];
     
     return view;
