@@ -39,11 +39,11 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="few-ba-iqG">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="few-ba-iqG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLg-ik-vhZ" customClass="SOTGridView">
-                                        <rect key="frame" x="16" y="8" width="343" height="200"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLg-ik-vhZ" customClass="SOTGridView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                         <color key="backgroundColor" red="0.031372549020000001" green="0.79607843140000001" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="numberOfColumns">
@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="trailing" secondItem="LLg-ik-vhZ" secondAttribute="trailing" id="3MJ-iq-v2c"/>
                                     <constraint firstItem="LLg-ik-vhZ" firstAttribute="leading" secondItem="few-ba-iqG" secondAttribute="leading" id="3ej-2A-puT"/>
                                     <constraint firstItem="LLg-ik-vhZ" firstAttribute="top" secondItem="few-ba-iqG" secondAttribute="top" id="L8m-rA-ZO7"/>
-                                    <constraint firstAttribute="bottom" secondItem="LLg-ik-vhZ" secondAttribute="bottom" id="Tjn-R5-1pq"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="LLg-ik-vhZ" secondAttribute="bottom" id="Tjn-R5-1pq"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
