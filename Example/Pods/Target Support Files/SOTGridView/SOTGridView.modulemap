@@ -1,0 +1,6 @@
+framework module SOTGridView {
+  umbrella header "SOTGridView-umbrella.h"
+
+  export *
+  module * { export * }
+}

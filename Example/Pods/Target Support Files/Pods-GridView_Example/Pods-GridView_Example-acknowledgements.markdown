@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## GridView
+## SOTGridView
 
 Copyright (c) 2017 acct<blob>=<NULL> <oni.zerone@gmail.com>
 

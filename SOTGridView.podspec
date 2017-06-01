@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'GridView'
+  s.name             = 'SOTGridView'
   s.version          = '0.1.0'
   s.summary          = 'A GridView with multiple columns layout and doubled directions.'
 
