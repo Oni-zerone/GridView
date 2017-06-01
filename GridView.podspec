@@ -18,8 +18,8 @@ with this view you could declare staggered views with multiple columns or multip
 
   s.homepage         = 'https://github.com/Oni-zerone/GridView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'acct<blob>=<NULL>' => 'oni.zerone@gmail.com' }
-  s.source           = { :git => 'https://github.com/acct<blob>=<NULL>/GridView.git', :tag => s.version.to_s }
+  s.author           = { 'Oni-zerone' => 'oni.zerone@gmail.com' }
+  s.source           = { :git => 'https://github.com/Oni-zerone/GridView.git', :tag => s.version.to_s }
    s.social_media_url = 'https://twitter.com/oni_zerone'
 
   s.ios.deployment_target = '8.0'
