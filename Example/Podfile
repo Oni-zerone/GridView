@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GridView_Example' do
+  pod 'GridView', :path => '../'
+
+  target 'GridView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
