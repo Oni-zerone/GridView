@@ -39,6 +39,10 @@ typedef enum : NSUInteger {
 
 - (void) gridView:(SOTGridView *_Nonnull)gridView didSelectItemAtIndex:(NSInteger)index;
 
+- (BOOL) gridView: (SOTGridView *_Nonnull)gridView shouldLongPressItemAtIndex:(NSInteger)index;
+
+- (void) gridView:(SOTGridView *_Nonnull)gridView didLongPressItemAtIndex:(NSInteger)index;
+
 @end
 
 @interface SOTGridView : UIView
