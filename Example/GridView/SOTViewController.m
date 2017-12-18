@@ -38,6 +38,16 @@
     [self.gridView reloadContents];
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ShowDetail"]) {
+        SOTDetailViewController *detailController = (SOTDetailViewController *)segue.destinationViewController;
+        if(detailController.view) {
+            [detailController.detailLabel setText:[NSString stringWithFormat:@"%i", [(NSNumber *)sender intValue]]];
+        }
+    }
+}
+
+#pragma mark - SOTGridView DataSource
 
 - (NSInteger)numberOfItemsInGridView:(SOTGridView *)gridView {
     return 45;
@@ -60,19 +70,16 @@
     return view;
 }
 
+#pragma mark - SOTGridView delegate
+
+- (BOOL) gridView:(SOTGridView *)gridView shouldSelectItemAtIndex:(NSInteger)index {
+    
+    return index != 3;
+}
+
 - (void) gridView:(SOTGridView *)gridView didSelectItemAtIndex:(NSInteger)index {
     
     [self performSegueWithIdentifier:@"ShowDetail" sender:[NSNumber numberWithInteger:index]];
-    
-}
-
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"ShowDetail"]) {
-        SOTDetailViewController *detailController = (SOTDetailViewController *)segue.destinationViewController;
-        if(detailController.view) {
-            [detailController.detailLabel setText:[NSString stringWithFormat:@"%i", [(NSNumber *)sender intValue]]];
-        }
-    }
 }
 
 @end
