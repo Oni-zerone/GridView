@@ -181,8 +181,15 @@
     SOTGridItem *view = [self.dataSource gridView:self viewAtIndex:index];
     [view addTarget:self action:@selector(didSelectItem:) forControlEvents:UIControlEventTouchUpInside];
     [view setTranslatesAutoresizingMaskIntoConstraints:NO];
+
+    //Add longPress gesture recognizer
+    if ([self.delegate respondsToSelector:@selector(gridView:didLongPressItemAtIndex:)]) {
+        UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self
+                                                                                                       action:@selector(didLongPress:)];
+        [view addGestureRecognizer:longPressGesture];
+    }
     
-    //Get the correct column into insert the view
+    //Get the correct column to insert the view
     UIView *column = [self.columns objectAtIndex:(index % self.columns.count)];
     [column addSubview:view];
     [self.items addObject:view];
@@ -294,6 +301,8 @@
     [column addConstraint:lastGreaterOrEqualConstraint];
 }
 
+#pragma mark - interactions
+
 - (void) didSelectItem:(SOTGridItem *)item {
     NSInteger index = [self.items indexOfObject:item];
     
@@ -302,6 +311,26 @@
             [self.delegate gridView:self didSelectItemAtIndex:index];
         }
     }
+}
+
+- (void) didLongPress:(UILongPressGestureRecognizer *)gestureRecognizer {
+    
+    if (![gestureRecognizer.view isKindOfClass:[SOTGridItem class]]) {
+        return;
+    }
+    SOTGridItem *gridItem = (SOTGridItem *)gestureRecognizer.view;
+    
+    NSInteger index = [self.items indexOfObject:gridItem];
+    if (index == NSNotFound) {
+        return;
+    }
+    
+    if ([self.delegate respondsToSelector:@selector(gridView:shouldLongPressItemAtIndex:)] &&
+        ![self.delegate gridView:self shouldLongPressItemAtIndex:index]) {
+        return;
+    }
+    
+    [self.delegate gridView:self didLongPressItemAtIndex:index];
 }
 
 #pragma mark - getter/setter
