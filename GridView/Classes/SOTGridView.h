@@ -37,6 +37,8 @@ typedef enum : NSUInteger {
 
 @optional
 
+- (BOOL) gridView: (SOTGridView *_Nonnull)gridView shouldSelectItemAtIndex:(NSInteger)index;
+
 - (void) gridView:(SOTGridView *_Nonnull)gridView didSelectItemAtIndex:(NSInteger)index;
 
 @end

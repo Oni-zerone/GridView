@@ -297,6 +297,11 @@
 - (void) didSelectItem:(SOTGridItem *)item {
     NSInteger index = [self.items indexOfObject:item];
     
+    if ([self.delegate respondsToSelector:@selector(gridView:shouldSelectItemAtIndex:)] &&
+        ![self.delegate gridView:self shouldSelectItemAtIndex:index]) {
+        return;
+    }
+    
     if(index != NSNotFound) {
         if(self.delegate && [self.delegate respondsToSelector:@selector(gridView:didSelectItemAtIndex:)]) {
             [self.delegate gridView:self didSelectItemAtIndex:index];
