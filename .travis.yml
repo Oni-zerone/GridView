@@ -9,4 +9,5 @@ xcode_workspace: Example/GridView.xcworkspace
 xcode_scheme: GridView_Example
 podfile: Example/Podfile
 xcode_sdk: iphonesimulator11.1
+script:
   - pod lib lint
