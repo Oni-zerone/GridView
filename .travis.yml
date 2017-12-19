@@ -2,11 +2,11 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
+
 language: objective-c
-osx_image: xcode8.2
-before_install:
-  - gem update fastlane --no-ri --no-rdoc --no-document
-  - gem update cocoapods --no-ri --no-rdoc --no-document
-script:
-  - fastlane ci
+osx_image: xcode9.2
+xcode_workspace: Example/GridView.xcworkspace
+xcode_scheme: GridView_Example
+podfile: Example/Podfile
+xcode_sdk: iphonesimulator11.1
   - pod lib lint
