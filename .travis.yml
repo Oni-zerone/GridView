@@ -2,12 +2,13 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-
+osx_image: xcode7.3
 language: objective-c
-osx_image: xcode9.2
-xcode_workspace: Example/GridView.xcworkspace
-xcode_scheme: GridView_Example
-podfile: Example/Podfile
-xcode_sdk: iphonesimulator11.1
+# cache: cocoapods
+# podfile: Example/Podfile
+# before_install:
+# - gem install cocoapods # Since Travis is not always on latest version
+# - pod install --project-directory=Example
 script:
-  - pod lib lint
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/GridView.xcworkspace -scheme GridView-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod lib lint
