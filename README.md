@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/GridView.svg?style=flat)](http://cocoapods.org/pods/GridView)
 [![License](https://img.shields.io/cocoapods/l/GridView.svg?style=flat)](http://cocoapods.org/pods/GridView)
 [![Platform](https://img.shields.io/cocoapods/p/GridView.svg?style=flat)](http://cocoapods.org/pods/GridView)
+[![codebeat badge](https://codebeat.co/badges/28401439-fa0d-43f7-a4b3-737d5595606c)](https://codebeat.co/projects/github-com-oni-zerone-gridview-master)
 
 ## Example
 
