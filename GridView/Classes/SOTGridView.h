@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SOTGridItem.h"
-
-@class SOTGridView;
 
 typedef enum : NSUInteger {
     SOTGridCompositionModeHorizontal,
     SOTGridCompositionModeVertical
 } SOTGridCompositionMode;
+
+@class SOTGridItem;
+@class SOTGridView;
 
 @protocol SOTGridViewDataSource <NSObject>
 
@@ -29,7 +29,7 @@ typedef enum : NSUInteger {
  *
  *
  */
-- (SOTGridItem *_Nonnull) gridView:(SOTGridView *_Nonnull)gridView viewAtIndex:(NSInteger)index;
+- (UIView *_Nonnull) gridView:(SOTGridView *_Nonnull)gridView viewAtIndex:(NSInteger)index;
 
 @end
 

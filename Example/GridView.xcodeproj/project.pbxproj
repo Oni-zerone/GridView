@@ -22,8 +22,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		97442ED5201C7B9600498D07 /* SOTCustomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97442ED4201C7B9600498D07 /* SOTCustomItem.swift */; };
 		97BA9AA31EE05E2C00CA286A /* SOTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA9AA21EE05E2C00CA286A /* SOTDetailViewController.m */; };
-		97BA9AA81EE05F6600CA286A /* SOTCustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA9AA61EE05F6600CA286A /* SOTCustomItem.m */; };
 		97BA9AA91EE05F6600CA286A /* SOTCustomItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BA9AA71EE05F6600CA286A /* SOTCustomItem.xib */; };
 		9D4A08AEB05ACBD34BAE445F /* Pods_GridView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B50D64E38E4918303C7D94 /* Pods_GridView_Example.framework */; };
 		D0B90AFF0F949AF92E04822A /* Pods_GridView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDA025515545F18BE10F493 /* Pods_GridView_Tests.framework */; };
@@ -67,10 +67,10 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ACE8DBC3F8A394EE46761AA /* Pods-GridView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GridView_Tests/Pods-GridView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9427F1E656A93DBC8B3B6A2B /* Pods-GridView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GridView_Example/Pods-GridView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		97442ED3201C7B9500498D07 /* GridView_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GridView_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		97442ED4201C7B9600498D07 /* SOTCustomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTCustomItem.swift; sourceTree = "<group>"; };
 		97BA9AA11EE05E2C00CA286A /* SOTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOTDetailViewController.h; sourceTree = "<group>"; };
 		97BA9AA21EE05E2C00CA286A /* SOTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOTDetailViewController.m; sourceTree = "<group>"; };
-		97BA9AA51EE05F6600CA286A /* SOTCustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOTCustomItem.h; sourceTree = "<group>"; };
-		97BA9AA61EE05F6600CA286A /* SOTCustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOTCustomItem.m; sourceTree = "<group>"; };
 		97BA9AA71EE05F6600CA286A /* SOTCustomItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOTCustomItem.xib; sourceTree = "<group>"; };
 		A763017747F42AB8771FA08D /* Pods-GridView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GridView_Example/Pods-GridView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D098506789EFF6C5D668651D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -210,9 +210,9 @@
 		97BA9AA41EE05F4C00CA286A /* CustomItem */ = {
 			isa = PBXGroup;
 			children = (
-				97BA9AA51EE05F6600CA286A /* SOTCustomItem.h */,
-				97BA9AA61EE05F6600CA286A /* SOTCustomItem.m */,
+				97442ED4201C7B9600498D07 /* SOTCustomItem.swift */,
 				97BA9AA71EE05F6600CA286A /* SOTCustomItem.xib */,
+				97442ED3201C7B9500498D07 /* GridView_Example-Bridging-Header.h */,
 			);
 			path = CustomItem;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = 6RS7DS4QV5;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 					};
 					6003F5AD195388D20070C39A = {
 						LastSwiftMigration = 0830;
@@ -421,10 +421,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97BA9AA81EE05F6600CA286A /* SOTCustomItem.m in Sources */,
 				6003F59E195388D20070C39A /* SOTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SOTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				97442ED5201C7B9600498D07 /* SOTCustomItem.swift in Sources */,
 				97BA9AA31EE05E2C00CA286A /* SOTDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,13 +553,17 @@
 			baseConfigurationReference = 9427F1E656A93DBC8B3B6A2B /* Pods-GridView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6RS7DS4QV5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GridView/GridView-Prefix.pch";
 				INFOPLIST_FILE = "GridView/GridView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GridView/CustomItem/GridView_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -570,13 +574,16 @@
 			baseConfigurationReference = A763017747F42AB8771FA08D /* Pods-GridView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6RS7DS4QV5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GridView/GridView-Prefix.pch";
 				INFOPLIST_FILE = "GridView/GridView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GridView/CustomItem/GridView_Example-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -586,6 +593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74117FE091CD37A533A30578 /* Pods-GridView_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -611,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8ACE8DBC3F8A394EE46761AA /* Pods-GridView_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

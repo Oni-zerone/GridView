@@ -6,6 +6,7 @@
 //  Copyright © 2016 Andrea Altea. All rights reserved.
 //
 
+#import <SOTGridView/SOTGridView-Swift.h>
 #import "SOTGridView.h"
 
 @interface SOTGridView ()

@@ -2,7 +2,6 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "SOTGridItem.h"
 #import "SOTGridView.h"
 
 FOUNDATION_EXPORT double SOTGridViewVersionNumber;

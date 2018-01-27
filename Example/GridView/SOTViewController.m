@@ -10,7 +10,7 @@
 #import "SOTDetailViewController.h"
 
 #import "SOTGridView.h"
-#import "SOTCustomItem.h"
+#import "GridView_Example-Swift.h"
 
 @interface SOTViewController () <SOTGridViewDataSource, SOTGridViewDelegate>
 
