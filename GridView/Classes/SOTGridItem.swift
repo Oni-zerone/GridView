@@ -5,7 +5,7 @@
 //  Created by Andrea Altea on 21/01/18.
 //
 
-import Foundation
+import UIKit
 
 @objc open class SOTGridItem: UIControl {
     

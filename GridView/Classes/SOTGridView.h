@@ -29,7 +29,7 @@ typedef enum : NSUInteger {
  *
  *
  */
-- (UIView *_Nonnull) gridView:(SOTGridView *_Nonnull)gridView viewAtIndex:(NSInteger)index;
+- (SOTGridItem *_Nonnull) gridView:(SOTGridView *_Nonnull)gridView viewAtIndex:(NSInteger)index;
 
 @end
 
