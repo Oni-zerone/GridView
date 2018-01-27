@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0909002AA2B0D4D85BEB6897E17A342A /* Pods-GridView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0C9B9A2147F05FEBBAD7C6392BED2B /* Pods-GridView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CF6ECDDABF5508B2093324D63CD599B /* SOTGridItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2A88785260D4F48F5B3920BA8FA98 /* SOTGridItemLayout.swift */; };
+		1CF6ECDDABF5508B2093324D63CD599B /* UIViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2A88785260D4F48F5B3920BA8FA98 /* UIViewLayout.swift */; };
 		3207B9D54F0F71514F4C00874C803AC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		51C86A4B80094E701D3B84BB8F6424E3 /* SOTGridView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B2ADDDD9557B6422E800EC92FF2553 /* SOTGridView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E0E9AE70EAFA199F0C6371441F5EBA9 /* SOTGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 524064D8AE7603C58057D16D4D79ABE2 /* SOTGridView.m */; };
 		83A18D77BFFEAC72AC6746ACB78BB620 /* Pods-GridView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 205C2043E1622623B709BB429C0972E3 /* Pods-GridView_Tests-dummy.m */; };
 		840D3848D4E56220F9E8FA960CA2210C /* Pods-GridView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5609F713D6BC77FB44B3501D722A2C6A /* Pods-GridView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9700CBAC201CC99100B00989 /* SOTGridViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700CBAB201CC99100B00989 /* SOTGridViewLayout.swift */; };
 		9BEE78D80F2819BC5918F917FF32430D /* SOTGridView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB999BA55B275054C801146D8968523E /* SOTGridView-dummy.m */; };
 		9E94FFF28762065BA1C1DE45AA700CBE /* SOTGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4930CE6F9370BF5EDADD38B98A8E57D2 /* SOTGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3D20ADB48B5AD8D5DD44C1BC45C19FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -56,6 +57,7 @@
 		90D634A63174E15BE0AABF56C1035384 /* Pods-GridView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GridView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94CF30733F6146D38D6E0E2E6EC2552C /* Pods-GridView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9700CBAB201CC99100B00989 /* SOTGridViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTGridViewLayout.swift; sourceTree = "<group>"; };
 		9AF9B6EF62E9A49A453D32E1654CB7FA /* Pods-GridView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9F2256FA1E4F994AC374B5EB6347FF52 /* Pods-GridView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B641F0814A66BFA898B6E85F31478386 /* SOTGridView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTGridView-prefix.pch"; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		DB999BA55B275054C801146D8968523E /* SOTGridView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SOTGridView-dummy.m"; sourceTree = "<group>"; };
 		EFF15C3330140931044B9A1DE0CA599F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F03F4DAB22E42653883EF352556AC5ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8E2A88785260D4F48F5B3920BA8FA98 /* SOTGridItemLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SOTGridItemLayout.swift; path = GridView/Classes/SOTGridItemLayout.swift; sourceTree = "<group>"; };
+		F8E2A88785260D4F48F5B3920BA8FA98 /* UIViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,11 +139,20 @@
 			);
 			sourceTree = "<group>";
 		};
+		9700CBAA201CC92700B00989 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2A88785260D4F48F5B3920BA8FA98 /* UIViewLayout.swift */,
+				9700CBAB201CC99100B00989 /* SOTGridViewLayout.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
 		A1B5C96DA56971670E2CE51D76378C54 /* SOTGridView */ = {
 			isa = PBXGroup;
 			children = (
 				2B2ECB39CAADBED5A1E9CD0876131C5A /* SOTGridItem.swift */,
-				F8E2A88785260D4F48F5B3920BA8FA98 /* SOTGridItemLayout.swift */,
+				9700CBAA201CC92700B00989 /* Internal */,
 				4930CE6F9370BF5EDADD38B98A8E57D2 /* SOTGridView.h */,
 				524064D8AE7603C58057D16D4D79ABE2 /* SOTGridView.m */,
 				D2AC739CD4155D5673ABED0C27C0EF69 /* Support Files */,
@@ -336,8 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9700CBAC201CC99100B00989 /* SOTGridViewLayout.swift in Sources */,
 				E24AEAA87D52BE1C964414ACBD4854C9 /* SOTGridItem.swift in Sources */,
-				1CF6ECDDABF5508B2093324D63CD599B /* SOTGridItemLayout.swift in Sources */,
+				1CF6ECDDABF5508B2093324D63CD599B /* UIViewLayout.swift in Sources */,
 				9BEE78D80F2819BC5918F917FF32430D /* SOTGridView-dummy.m in Sources */,
 				5E0E9AE70EAFA199F0C6371441F5EBA9 /* SOTGridView.m in Sources */,
 			);

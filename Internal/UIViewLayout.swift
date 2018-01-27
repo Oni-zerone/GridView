@@ -7,11 +7,11 @@
 
 import UIKit
 
-internal typealias SOTGridItemLayout = SOTGridItem
+internal typealias UIViewLayout = UIView
 
-internal extension SOTGridItemLayout {
+internal extension UIViewLayout {
     
-    internal func attachOrthogonal(mode: SOTGridCompositionMode, contentMargins margins: UIEdgeInsets) {
+    internal func attachOnSuperview(mode: SOTGridCompositionMode, contentMargins margins: UIEdgeInsets) {
         
         switch mode {
         
@@ -21,6 +21,21 @@ internal extension SOTGridItemLayout {
         case SOTGridCompositionModeHorizontal:
             self.attachHorizontal(contentMargins: margins)
         
+        default:
+            break
+        }
+    }
+
+    internal func attachOrthogonalOnSuperview(mode: SOTGridCompositionMode, contentMargins margins: UIEdgeInsets) {
+        
+        switch mode {
+            
+        case SOTGridCompositionModeHorizontal:
+            self.attachVertical(contentMargins: margins)
+            
+        case SOTGridCompositionModeVertical:
+            self.attachHorizontal(contentMargins: margins)
+            
         default:
             break
         }

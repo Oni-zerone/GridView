@@ -12,13 +12,13 @@ import XCTest
 class SOTGridItemLayoutTests: XCTestCase {
  
     var superview: UIView = UIView()
-    var gridItem: SOTGridItem = SOTGridItem()
+    var gridItem: UIView = UIView()
     
     override func setUp() {
         super.setUp()
         
         self.superview = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 100)))
-        self.gridItem = SOTGridItem(frame: .zero)
+        self.gridItem = UIView(frame: .zero)
         self.gridItem.translatesAutoresizingMaskIntoConstraints = false
     }
     
@@ -26,13 +26,13 @@ class SOTGridItemLayoutTests: XCTestCase {
         super.tearDown()
         
         self.superview = UIView()
-        self.gridItem = SOTGridItem()
+        self.gridItem = UIView()
     }
 
     func testVerticalAttachWithMode() {
         
         self.superview.addSubview(self.gridItem)
-        self.gridItem.attachOrthogonal(mode: SOTGridCompositionModeVertical, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        self.gridItem.attachOnSuperview(mode: SOTGridCompositionModeVertical, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
         
         self.checkVerticalConstraints()
     }
@@ -40,9 +40,25 @@ class SOTGridItemLayoutTests: XCTestCase {
     func testHorizontalAttachWithMode() {
         
         self.superview.addSubview(self.gridItem)
-        self.gridItem.attachOrthogonal(mode: SOTGridCompositionModeHorizontal, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        self.gridItem.attachOnSuperview(mode: SOTGridCompositionModeHorizontal, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
         
         self.checkHorizontalConstraints()
+    }
+    
+    func testVerticalAttachOrghogonalWithMode() {
+        
+        self.superview.addSubview(self.gridItem)
+        self.gridItem.attachOrthogonalOnSuperview(mode: SOTGridCompositionModeVertical, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        
+        self.checkHorizontalConstraints()
+    }
+    
+    func testHorizontalAttachOrghogonalWithMode() {
+        
+        self.superview.addSubview(self.gridItem)
+        self.gridItem.attachOrthogonalOnSuperview(mode: SOTGridCompositionModeHorizontal, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        
+        self.checkVerticalConstraints()
     }
     
     func testAttachVertical() {
@@ -108,43 +124,4 @@ class SOTGridItemLayoutTests: XCTestCase {
             return XCTFail("Bottom Constraint not set.")
         }
     }
-}
-
-extension Array where Element == NSLayoutConstraint {
-    
-    func filter(byView view: UIView, withAttribute attribute: NSLayoutAttribute? = nil) -> [NSLayoutConstraint] {
-        
-        return self.filter { (constraint) -> Bool in
-            return constraint.check(withView: view, attribute: attribute)
-        }
-    }
-}
-
-extension NSLayoutConstraint {
-    
-    func check(withView view: UIView, attribute: NSLayoutAttribute? = nil) -> Bool {
-        
-        if let firstView = self.firstItem as? UIView,
-            firstView == view {
-            
-            guard let attribute = attribute else {
-                return true
-            }
-            
-            return attribute == self.firstAttribute
-        }
-
-        if let secondView = self.secondItem as? UIView,
-            secondView == view {
-            
-            guard let attribute = attribute else {
-                return true
-            }
-            
-            return attribute == self.secondAttribute
-        }
-        
-        return false
-    }
-    
 }
