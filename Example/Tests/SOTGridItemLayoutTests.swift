@@ -29,11 +29,52 @@ class SOTGridItemLayoutTests: XCTestCase {
         self.gridItem = SOTGridItem()
     }
 
-    func testAttachVertically() {
-
+    func testVerticalAttachWithMode() {
+        
+        self.superview.addSubview(self.gridItem)
+        self.gridItem.attachOrthogonal(mode: SOTGridCompositionModeVertical, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        
+        self.checkVerticalConstraints()
+    }
+    
+    func testHorizontalAttachWithMode() {
+        
+        self.superview.addSubview(self.gridItem)
+        self.gridItem.attachOrthogonal(mode: SOTGridCompositionModeHorizontal, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        
+        self.checkHorizontalConstraints()
+    }
+    
+    func testAttachVertical() {
+        
         self.superview.addSubview(self.gridItem)
         self.gridItem.attachVertical(contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+
+        self.checkVerticalConstraints()
+    }
+    
+    func testUnattacchedVertical() {
         
+        self.gridItem.attachVertical(contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        XCTAssert(self.superview.constraints.count == 0, "Shouln't have constraints")
+    }
+    
+    func testAttachHorizontal() {
+        
+        self.superview.addSubview(self.gridItem)
+        self.gridItem.attachHorizontal(contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        
+        self.checkHorizontalConstraints()
+    }
+
+    func testUnattacchedHorizontal() {
+        
+        self.gridItem.attachHorizontal(contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        XCTAssert(self.superview.constraints.count == 0, "Shouln't have constraints")
+    }
+
+    func checkVerticalConstraints() {
+
         let constraints = self.superview.constraints.filter(byView: self.gridItem)
         XCTAssert(constraints.count == 2, "Constraints should be 2, are \(self.gridItem.constraints.count)")
         
@@ -50,10 +91,7 @@ class SOTGridItemLayoutTests: XCTestCase {
         }
     }
     
-    func testAttachHorizontally() {
-        
-        self.superview.addSubview(self.gridItem)
-        self.gridItem.attachHorizontal(contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+    func checkHorizontalConstraints() {
         
         let constraints = self.superview.constraints.filter(byView: self.gridItem)
         XCTAssert(constraints.count == 2, "Constraints should be 2, are \(self.gridItem.constraints.count)")

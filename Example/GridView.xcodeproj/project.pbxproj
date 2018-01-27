@@ -182,8 +182,8 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5B6195388D20070C39A /* Supporting Files */,
 				97A75674201C9B69008EAA3D /* SOTGridItemLayoutTests.swift */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
