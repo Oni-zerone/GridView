@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0909002AA2B0D4D85BEB6897E17A342A /* Pods-GridView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0C9B9A2147F05FEBBAD7C6392BED2B /* Pods-GridView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B27C052D4662650371C695C397BD3F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		4CDCCCC636E3FEA02C5E95E09747A2ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		52D245A7FB150EAEABEC5FA3C44079A8 /* SOTGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0B1DC3A117B53F5F94083552BAF610 /* SOTGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF6ECDDABF5508B2093324D63CD599B /* SOTGridItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2A88785260D4F48F5B3920BA8FA98 /* SOTGridItemLayout.swift */; };
+		3207B9D54F0F71514F4C00874C803AC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		51C86A4B80094E701D3B84BB8F6424E3 /* SOTGridView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B2ADDDD9557B6422E800EC92FF2553 /* SOTGridView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E0E9AE70EAFA199F0C6371441F5EBA9 /* SOTGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 524064D8AE7603C58057D16D4D79ABE2 /* SOTGridView.m */; };
 		83A18D77BFFEAC72AC6746ACB78BB620 /* Pods-GridView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 205C2043E1622623B709BB429C0972E3 /* Pods-GridView_Tests-dummy.m */; };
 		840D3848D4E56220F9E8FA960CA2210C /* Pods-GridView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5609F713D6BC77FB44B3501D722A2C6A /* Pods-GridView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DDF39040D93F793E9F15C4EAB3E35DB /* SOTGridView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C27D6AF2921736DB1D8AB667E8A8EBD /* SOTGridView-dummy.m */; };
-		97F69A9A20154FAE0088A2B1 /* SOTGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F69A9920154FAE0088A2B1 /* SOTGridItem.swift */; };
-		BF62AB05928331998796E54FE8AF658C /* SOTGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3798052DB1972142F5277EFB7B9196 /* SOTGridView.m */; };
+		9BEE78D80F2819BC5918F917FF32430D /* SOTGridView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB999BA55B275054C801146D8968523E /* SOTGridView-dummy.m */; };
+		9E94FFF28762065BA1C1DE45AA700CBE /* SOTGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4930CE6F9370BF5EDADD38B98A8E57D2 /* SOTGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D20ADB48B5AD8D5DD44C1BC45C19FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BBEFEC9B32A83EDB44CBE89694A6636B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C52D9ED861B44E539A3E0C44B7E0D81F /* Pods-GridView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8883A7F63E052795D2CE755E81A0886E /* Pods-GridView_Example-dummy.m */; };
-		C6AD41B0E83DF9621BA5C3B229A3D11C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		DBDB4766B57E0119B4CCD29AD377B061 /* SOTGridView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F974C1A532754B0F02DC55CAAF89DB1B /* SOTGridView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E24AEAA87D52BE1C964414ACBD4854C9 /* SOTGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2ECB39CAADBED5A1E9CD0876131C5A /* SOTGridItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,39 +34,40 @@
 
 /* Begin PBXFileReference section */
 		0470E7A377838D42CB5C120A64DEBD7D /* Pods-GridView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GridView_Tests.modulemap"; sourceTree = "<group>"; };
-		0C27D6AF2921736DB1D8AB667E8A8EBD /* SOTGridView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SOTGridView-dummy.m"; sourceTree = "<group>"; };
 		0FF43C1187E460B2CFD4DA75B308C932 /* Pods_GridView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C68284DDB8A305B9659F8B0BCA41BF /* Pods-GridView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GridView_Tests-resources.sh"; sourceTree = "<group>"; };
 		205C2043E1622623B709BB429C0972E3 /* Pods-GridView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GridView_Tests-dummy.m"; sourceTree = "<group>"; };
 		225CEFBBB5206595DC118EA8283957D0 /* Pods-GridView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GridView_Example-resources.sh"; sourceTree = "<group>"; };
+		2B2ECB39CAADBED5A1E9CD0876131C5A /* SOTGridItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SOTGridItem.swift; path = GridView/Classes/SOTGridItem.swift; sourceTree = "<group>"; };
 		2D5D214C75D53EA8E5592E91DA0A1A31 /* Pods_GridView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E4F958B9D657C13B12D1A7774F246F /* SOTGridView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SOTGridView.modulemap; sourceTree = "<group>"; };
+		37B2ADDDD9557B6422E800EC92FF2553 /* SOTGridView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTGridView-umbrella.h"; sourceTree = "<group>"; };
+		421730CCAAD832432B79C49C6D010FF4 /* SOTGridView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOTGridView.xcconfig; sourceTree = "<group>"; };
 		4441911CD00FE97868B419DDA27175FA /* Pods-GridView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GridView_Example.modulemap"; sourceTree = "<group>"; };
+		4930CE6F9370BF5EDADD38B98A8E57D2 /* SOTGridView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SOTGridView.h; path = GridView/Classes/SOTGridView.h; sourceTree = "<group>"; };
+		524064D8AE7603C58057D16D4D79ABE2 /* SOTGridView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SOTGridView.m; path = GridView/Classes/SOTGridView.m; sourceTree = "<group>"; };
 		5609F713D6BC77FB44B3501D722A2C6A /* Pods-GridView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GridView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5989A9F5941F4EFF04FF76D203E0518F /* Pods-GridView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GridView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		77F86E18FC5D51A19A0C7A46412BC60D /* SOTGridView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOTGridView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C0344C060DB20ED49C09261A75D459D /* SOTGridView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOTGridView.xcconfig; sourceTree = "<group>"; };
 		8883A7F63E052795D2CE755E81A0886E /* Pods-GridView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GridView_Example-dummy.m"; sourceTree = "<group>"; };
-		8C0B1DC3A117B53F5F94083552BAF610 /* SOTGridView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SOTGridView.h; sourceTree = "<group>"; };
 		8E0C9B9A2147F05FEBBAD7C6392BED2B /* Pods-GridView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GridView_Example-umbrella.h"; sourceTree = "<group>"; };
 		906C55171BCB2BDF6F8E3A67B1FAAA9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D634A63174E15BE0AABF56C1035384 /* Pods-GridView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GridView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94CF30733F6146D38D6E0E2E6EC2552C /* Pods-GridView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		97F69A9920154FAE0088A2B1 /* SOTGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTGridItem.swift; sourceTree = "<group>"; };
 		9AF9B6EF62E9A49A453D32E1654CB7FA /* Pods-GridView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9F2256FA1E4F994AC374B5EB6347FF52 /* Pods-GridView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		AF60A9542053EC9F45188ADC83E2B667 /* SOTGridView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SOTGridView.modulemap; sourceTree = "<group>"; };
+		B641F0814A66BFA898B6E85F31478386 /* SOTGridView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTGridView-prefix.pch"; sourceTree = "<group>"; };
 		B7FB0A42BF6D00BA1EF46EB01A1BDE24 /* Pods-GridView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GridView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BD0BB85D033256B4770373382599016B /* Pods-GridView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GridView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		C081175AF35F0F130C13E1E792FEB0E5 /* Pods-GridView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GridView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CC081A90B7E76B466F03F7DC3EE56C41 /* Pods-GridView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GridView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D007FD56BFC68281618CCF973EEEEC17 /* SOTGridView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTGridView-prefix.pch"; sourceTree = "<group>"; };
 		DAE29E5027A521A087F787100B807E33 /* Pods-GridView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DB999BA55B275054C801146D8968523E /* SOTGridView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SOTGridView-dummy.m"; sourceTree = "<group>"; };
+		EFF15C3330140931044B9A1DE0CA599F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F03F4DAB22E42653883EF352556AC5ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F25D76C83FBA283E7146437BB9D560A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F974C1A532754B0F02DC55CAAF89DB1B /* SOTGridView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTGridView-umbrella.h"; sourceTree = "<group>"; };
-		FF3798052DB1972142F5277EFB7B9196 /* SOTGridView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SOTGridView.m; sourceTree = "<group>"; };
+		F8E2A88785260D4F48F5B3920BA8FA98 /* SOTGridItemLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SOTGridItemLayout.swift; path = GridView/Classes/SOTGridItemLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CDCCCC636E3FEA02C5E95E09747A2ED /* Foundation.framework in Frameworks */,
+				3207B9D54F0F71514F4C00874C803AC1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B27C052D4662650371C695C397BD3F1 /* Foundation.framework in Frameworks */,
+				BBEFEC9B32A83EDB44CBE89694A6636B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6AD41B0E83DF9621BA5C3B229A3D11C /* Foundation.framework in Frameworks */,
+				B3D20ADB48B5AD8D5DD44C1BC45C19FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,41 +126,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2EF67D3A178E48A5F18F66577FAA3596 /* SOTGridView */ = {
-			isa = PBXGroup;
-			children = (
-				CE786B8C6D684C1D7FCA3180E86E1644 /* GridView */,
-				E0329755284CAFD7C8F3EE2C541229B8 /* Support Files */,
-			);
-			name = SOTGridView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				987B279613C62D63D3A5D70965C1DDCD /* Development Pods */,
+				F6166D4ED27BBAB138D99DEE4B029972 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				255870ED011A2BAD3725CE5AE24E3658 /* Products */,
 				F7571C3144B75FF6B8248D7B1341CAF8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		987B279613C62D63D3A5D70965C1DDCD /* Development Pods */ = {
+		A1B5C96DA56971670E2CE51D76378C54 /* SOTGridView */ = {
 			isa = PBXGroup;
 			children = (
-				2EF67D3A178E48A5F18F66577FAA3596 /* SOTGridView */,
+				2B2ECB39CAADBED5A1E9CD0876131C5A /* SOTGridItem.swift */,
+				F8E2A88785260D4F48F5B3920BA8FA98 /* SOTGridItemLayout.swift */,
+				4930CE6F9370BF5EDADD38B98A8E57D2 /* SOTGridView.h */,
+				524064D8AE7603C58057D16D4D79ABE2 /* SOTGridView.m */,
+				D2AC739CD4155D5673ABED0C27C0EF69 /* Support Files */,
 			);
-			name = "Development Pods";
+			name = SOTGridView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		AC2A6B0B1F4CABA68899955EF5D95F39 /* Pods-GridView_Example */ = {
@@ -179,44 +168,42 @@
 			path = "Target Support Files/Pods-GridView_Example";
 			sourceTree = "<group>";
 		};
-		B660832591E4B0B70BD7EBD5E03C94FF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8C0B1DC3A117B53F5F94083552BAF610 /* SOTGridView.h */,
-				FF3798052DB1972142F5277EFB7B9196 /* SOTGridView.m */,
-				97F69A9920154FAE0088A2B1 /* SOTGridItem.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE786B8C6D684C1D7FCA3180E86E1644 /* GridView */ = {
+		D2AC739CD4155D5673ABED0C27C0EF69 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B660832591E4B0B70BD7EBD5E03C94FF /* Classes */,
-			);
-			path = GridView;
-			sourceTree = "<group>";
-		};
-		E0329755284CAFD7C8F3EE2C541229B8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F25D76C83FBA283E7146437BB9D560A0 /* Info.plist */,
-				AF60A9542053EC9F45188ADC83E2B667 /* SOTGridView.modulemap */,
-				7C0344C060DB20ED49C09261A75D459D /* SOTGridView.xcconfig */,
-				0C27D6AF2921736DB1D8AB667E8A8EBD /* SOTGridView-dummy.m */,
-				D007FD56BFC68281618CCF973EEEEC17 /* SOTGridView-prefix.pch */,
-				F974C1A532754B0F02DC55CAAF89DB1B /* SOTGridView-umbrella.h */,
+				EFF15C3330140931044B9A1DE0CA599F /* Info.plist */,
+				36E4F958B9D657C13B12D1A7774F246F /* SOTGridView.modulemap */,
+				421730CCAAD832432B79C49C6D010FF4 /* SOTGridView.xcconfig */,
+				DB999BA55B275054C801146D8968523E /* SOTGridView-dummy.m */,
+				B641F0814A66BFA898B6E85F31478386 /* SOTGridView-prefix.pch */,
+				37B2ADDDD9557B6422E800EC92FF2553 /* SOTGridView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SOTGridView";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F6166D4ED27BBAB138D99DEE4B029972 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5C96DA56971670E2CE51D76378C54 /* SOTGridView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		F7571C3144B75FF6B8248D7B1341CAF8 /* Targets Support Files */ = {
@@ -247,12 +234,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACC22227505B7D19596D08A0A0B90BA3 /* Headers */ = {
+		9FB2342B36F491B727247F46A3BF88D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBDB4766B57E0119B4CCD29AD377B061 /* SOTGridView-umbrella.h in Headers */,
-				52D245A7FB150EAEABEC5FA3C44079A8 /* SOTGridView.h in Headers */,
+				51C86A4B80094E701D3B84BB8F6424E3 /* SOTGridView-umbrella.h in Headers */,
+				9E94FFF28762065BA1C1DE45AA700CBE /* SOTGridView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +267,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7834AB9F8ADB3D16DD09CAC42E2BAA12 /* Build configuration list for PBXNativeTarget "SOTGridView" */;
 			buildPhases = (
-				A9787C6C48377E7EC32156951E3B841E /* Sources */,
+				4561C42EDCC03681E741E2797603DDD1 /* Sources */,
 				DCCCA6A66AE170AD1C2BC96E1900A1E1 /* Frameworks */,
-				ACC22227505B7D19596D08A0A0B90BA3 /* Headers */,
+				9FB2342B36F491B727247F46A3BF88D9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -317,8 +304,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					F27424002849D94D13190033C54206B2 = {
 						LastSwiftMigration = 0900;
@@ -345,13 +332,14 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A9787C6C48377E7EC32156951E3B841E /* Sources */ = {
+		4561C42EDCC03681E741E2797603DDD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DDF39040D93F793E9F15C4EAB3E35DB /* SOTGridView-dummy.m in Sources */,
-				97F69A9A20154FAE0088A2B1 /* SOTGridItem.swift in Sources */,
-				BF62AB05928331998796E54FE8AF658C /* SOTGridView.m in Sources */,
+				E24AEAA87D52BE1C964414ACBD4854C9 /* SOTGridItem.swift in Sources */,
+				1CF6ECDDABF5508B2093324D63CD599B /* SOTGridItemLayout.swift in Sources */,
+				9BEE78D80F2819BC5918F917FF32430D /* SOTGridView-dummy.m in Sources */,
+				5E0E9AE70EAFA199F0C6371441F5EBA9 /* SOTGridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,296 +371,315 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1EEF06D1FF5CEAFF40F8FBDD77F5A71F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAE29E5027A521A087F787100B807E33 /* Pods-GridView_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GridView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GridView_Example/Pods-GridView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GridView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		24DBE2DB1A90278CB4A21495E64E3477 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F2256FA1E4F994AC374B5EB6347FF52 /* Pods-GridView_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GridView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GridView_Tests/Pods-GridView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GridView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2DF47A50D7A7731CCF29071FFBA48156 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C0344C060DB20ED49C09261A75D459D /* SOTGridView.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SOTGridView/SOTGridView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SOTGridView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SOTGridView/SOTGridView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = it.studiout.SOTGridView;
-				PRODUCT_NAME = SOTGridView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2FAAC6E03E09BD78AB33251CC49DA406 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94CF30733F6146D38D6E0E2E6EC2552C /* Pods-GridView_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GridView_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GridView_Example/Pods-GridView_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GridView_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		704A077586BBE649E65588F8EE7B27FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C0344C060DB20ED49C09261A75D459D /* SOTGridView.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SOTGridView/SOTGridView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SOTGridView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SOTGridView/SOTGridView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = it.studiout.SOTGridView;
-				PRODUCT_NAME = SOTGridView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8845F3341113FB940B878F2779CEED89 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AF9B6EF62E9A49A453D32E1654CB7FA /* Pods-GridView_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GridView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GridView_Tests/Pods-GridView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GridView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B84AFA022FA07F6A51173FFDE05B562A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF9B6EF62E9A49A453D32E1654CB7FA /* Pods-GridView_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GridView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GridView_Tests/Pods-GridView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GridView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C83662A091B720492EE6DE86C4E86371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421730CCAAD832432B79C49C6D010FF4 /* SOTGridView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SOTGridView/SOTGridView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SOTGridView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SOTGridView/SOTGridView.modulemap";
+				PRODUCT_NAME = SOTGridView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D84BB1AD935AF6DBD2BC7EBB96FA4A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421730CCAAD832432B79C49C6D010FF4 /* SOTGridView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SOTGridView/SOTGridView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SOTGridView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SOTGridView/SOTGridView.modulemap";
+				PRODUCT_NAME = SOTGridView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCC566AD1DC1494A96CD6B63FD73EBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CF30733F6146D38D6E0E2E6EC2552C /* Pods-GridView_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GridView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GridView_Example/Pods-GridView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GridView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFCFA2DF05C6323D0CFA7999C70767A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE29E5027A521A087F787100B807E33 /* Pods-GridView_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GridView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GridView_Example/Pods-GridView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GridView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC26AD51E41231C5DEA5B4E592511A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F2256FA1E4F994AC374B5EB6347FF52 /* Pods-GridView_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GridView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GridView_Tests/Pods-GridView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GridView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -682,8 +689,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -691,8 +698,8 @@
 		7834AB9F8ADB3D16DD09CAC42E2BAA12 /* Build configuration list for PBXNativeTarget "SOTGridView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				704A077586BBE649E65588F8EE7B27FA /* Debug */,
-				2DF47A50D7A7731CCF29071FFBA48156 /* Release */,
+				D84BB1AD935AF6DBD2BC7EBB96FA4A6B /* Debug */,
+				C83662A091B720492EE6DE86C4E86371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -700,8 +707,8 @@
 		A910AF0BFFBCFCA5266A32202D423641 /* Build configuration list for PBXNativeTarget "Pods-GridView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FAAC6E03E09BD78AB33251CC49DA406 /* Debug */,
-				1EEF06D1FF5CEAFF40F8FBDD77F5A71F /* Release */,
+				DCC566AD1DC1494A96CD6B63FD73EBE4 /* Debug */,
+				DFCFA2DF05C6323D0CFA7999C70767A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -709,8 +716,8 @@
 		D95A28464BCD61D6B2A41D292E1D1F12 /* Build configuration list for PBXNativeTarget "Pods-GridView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24DBE2DB1A90278CB4A21495E64E3477 /* Debug */,
-				8845F3341113FB940B878F2779CEED89 /* Release */,
+				EC26AD51E41231C5DEA5B4E592511A74 /* Debug */,
+				B84AFA022FA07F6A51173FFDE05B562A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

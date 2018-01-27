@@ -22,7 +22,7 @@ with this view you could declare staggered views with multiple columns or multip
   s.source           = { :git => 'https://github.com/Oni-zerone/GridView.git', :tag => s.version.to_s }
    s.social_media_url = 'https://twitter.com/oni_zerone'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'GridView/Classes/**/*'
 end
