@@ -60,7 +60,7 @@ internal extension SOTGridGroupsLayout {
     
     }
     
-    internal attachLastGroup() {
+    internal func attachLastGroup() {
     
     }
 }
