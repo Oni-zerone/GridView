@@ -58,10 +58,37 @@ class SOTGridGroupLayoutTests: XCTestCase {
         XCTAssert(equalityConstraints.count == 2, "EqualityConstraint for firstColumn should be 2")
     }
     
-    func checkEqualityConstraintValidity(_ constraint: NSLayoutConstraint, column: UIView) {
+    func testFirstColumnEqualityConstraintCreationOnHorizontalConfiguration() {
         
+        self.gridView.insertGroup()
+        let equalityConstraints = self.gridView.constraints.filter(byView: self.gridView.groups.first!, withAttribute: .height)
+        XCTAssert(equalityConstraints.count == 0, "EqualityConstraint for firstColumn should be nil")
+    }
+
+    func testMoreColumnEqualityConstraintCreationOnHorizontalConfiguration() {
+        
+        self.gridView.compositionMode = .horizontal
+        
+        self.gridView.insertGroup()
+        self.gridView.insertGroup()
+        self.gridView.insertGroup()
+        
+        let equalityConstraints = self.gridView.constraints.filter(byView: self.gridView.groups.first!, withAttribute: .height)
+        XCTAssert(equalityConstraints.count == 2, "EqualityConstraint for firstColumn should be 2")
+    }
+
+    func testEqualityConstraintValidity() {
+
+        self.gridView.insertGroup()
+        self.gridView.insertGroup()
+        
+        guard let constraint = self.gridView.constraints.filter(byView: self.gridView.groups.first!, withAttribute: .width).first else {
+            XCTFail("Unable to find equalityConstraint")
+            return
+        }
+
         XCTAssert((constraint.firstItem as? UIView) == self.gridView.groups.first, "firstItem should be first column")
-        XCTAssert((constraint.secondItem as? UIView) == column, "firstItem should be first column")
+        XCTAssert((constraint.secondItem as? UIView) == self.gridView.groups.last, "secondItem should be second column")
     }
     
 }
