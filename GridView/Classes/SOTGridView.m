@@ -99,6 +99,41 @@
                                                                         constant:contentDistance];
     [self addConstraint:firstConstraint];
     
+    //Add orghogonal constraints
+    NSLayoutAttribute firstOrthogonalAttribute;
+    NSLayoutAttribute secondOrhogonalAttribute;
+    CGFloat firstOrthogonalDistance = 0;
+    CGFloat secondOrthogonalDistance = 0;
+    if(self.compositionMode == SOTGridCompositionModeVertical) {
+        firstOrthogonalAttribute = NSLayoutAttributeBottom;
+        secondOrhogonalAttribute = NSLayoutAttributeTop;
+        firstOrthogonalDistance = self.contentMargins.top;
+        secondOrthogonalDistance = self.contentMargins.bottom;
+        
+    } else {
+        firstOrthogonalAttribute = NSLayoutAttributeTrailing;
+        secondOrhogonalAttribute = NSLayoutAttributeLeading;
+        firstOrthogonalDistance = [self interfaceLayoutDirection] == UIUserInterfaceLayoutDirectionLeftToRight ? self.contentMargins.left : self.contentMargins.right;
+        secondOrthogonalDistance = [self interfaceLayoutDirection] == UIUserInterfaceLayoutDirectionLeftToRight ? self.contentMargins.right : self.contentMargins.left;
+    }
+    
+    NSLayoutConstraint *firstOrthogonalConstraint = [NSLayoutConstraint constraintWithItem:self
+                                                                                 attribute:firstOrthogonalAttribute
+                                                                                 relatedBy:NSLayoutRelationEqual
+                                                                                    toItem:column
+                                                                                 attribute:firstOrthogonalAttribute
+                                                                                multiplier:1
+                                                                                  constant:firstOrthogonalDistance];
+    NSLayoutConstraint *secondOrthogonalConstraint = [NSLayoutConstraint constraintWithItem:column
+                                                                                  attribute:secondOrhogonalAttribute
+                                                                                  relatedBy:NSLayoutRelationEqual
+                                                                                     toItem:self
+                                                                                  attribute:secondOrhogonalAttribute
+                                                                                 multiplier:1
+                                                                                   constant:secondOrthogonalDistance];
+    [self addConstraint:firstOrthogonalConstraint];
+    [self addConstraint:secondOrthogonalConstraint];
+    
     //Add row dimension constraint
     if(self.columns.count > 1) {
         NSLayoutAttribute dimensionAttribute = self.compositionMode == SOTGridCompositionModeVertical ? NSLayoutAttributeWidth : NSLayoutAttributeHeight;

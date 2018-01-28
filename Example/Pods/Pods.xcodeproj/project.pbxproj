@@ -14,7 +14,12 @@
 		5E0E9AE70EAFA199F0C6371441F5EBA9 /* SOTGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 524064D8AE7603C58057D16D4D79ABE2 /* SOTGridView.m */; };
 		83A18D77BFFEAC72AC6746ACB78BB620 /* Pods-GridView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 205C2043E1622623B709BB429C0972E3 /* Pods-GridView_Tests-dummy.m */; };
 		840D3848D4E56220F9E8FA960CA2210C /* Pods-GridView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5609F713D6BC77FB44B3501D722A2C6A /* Pods-GridView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9700CBAC201CC99100B00989 /* SOTGridViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700CBAB201CC99100B00989 /* SOTGridViewLayout.swift */; };
+		9700CBAC201CC99100B00989 /* SOTGridGroupsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700CBAB201CC99100B00989 /* SOTGridGroupsLayout.swift */; };
+		9700CBB1201CCDBE00B00989 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700CBB0201CCDBE00B00989 /* GridView.swift */; };
+		9700CBB4201CCE7500B00989 /* GridViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700CBB3201CCE7500B00989 /* GridViewDataSource.swift */; };
+		9700CBB6201CCF0C00B00989 /* GridViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700CBB5201CCF0C00B00989 /* GridViewDelegate.swift */; };
+		9727CB7C201CEE35009087EC /* SOTGridViewContentLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727CB7A201CEDA2009087EC /* SOTGridViewContentLoad.swift */; };
+		9727CB7E201D22BA009087EC /* SOTGridGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727CB7D201D22BA009087EC /* SOTGridGroup.swift */; };
 		9BEE78D80F2819BC5918F917FF32430D /* SOTGridView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB999BA55B275054C801146D8968523E /* SOTGridView-dummy.m */; };
 		9E94FFF28762065BA1C1DE45AA700CBE /* SOTGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4930CE6F9370BF5EDADD38B98A8E57D2 /* SOTGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3D20ADB48B5AD8D5DD44C1BC45C19FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -57,7 +62,12 @@
 		90D634A63174E15BE0AABF56C1035384 /* Pods-GridView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GridView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94CF30733F6146D38D6E0E2E6EC2552C /* Pods-GridView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9700CBAB201CC99100B00989 /* SOTGridViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTGridViewLayout.swift; sourceTree = "<group>"; };
+		9700CBAB201CC99100B00989 /* SOTGridGroupsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTGridGroupsLayout.swift; sourceTree = "<group>"; };
+		9700CBB0201CCDBE00B00989 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GridView.swift; path = GridView/Classes/GridView.swift; sourceTree = "<group>"; };
+		9700CBB3201CCE7500B00989 /* GridViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewDataSource.swift; sourceTree = "<group>"; };
+		9700CBB5201CCF0C00B00989 /* GridViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewDelegate.swift; sourceTree = "<group>"; };
+		9727CB7A201CEDA2009087EC /* SOTGridViewContentLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTGridViewContentLoad.swift; sourceTree = "<group>"; };
+		9727CB7D201D22BA009087EC /* SOTGridGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTGridGroup.swift; sourceTree = "<group>"; };
 		9AF9B6EF62E9A49A453D32E1654CB7FA /* Pods-GridView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9F2256FA1E4F994AC374B5EB6347FF52 /* Pods-GridView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GridView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B641F0814A66BFA898B6E85F31478386 /* SOTGridView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOTGridView-prefix.pch"; sourceTree = "<group>"; };
@@ -143,15 +153,28 @@
 			isa = PBXGroup;
 			children = (
 				F8E2A88785260D4F48F5B3920BA8FA98 /* UIViewLayout.swift */,
-				9700CBAB201CC99100B00989 /* SOTGridViewLayout.swift */,
+				9700CBAB201CC99100B00989 /* SOTGridGroupsLayout.swift */,
+				9727CB7A201CEDA2009087EC /* SOTGridViewContentLoad.swift */,
+				9727CB7D201D22BA009087EC /* SOTGridGroup.swift */,
 			);
 			path = Internal;
+			sourceTree = "<group>";
+		};
+		9700CBB2201CCE5A00B00989 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				9700CBB3201CCE7500B00989 /* GridViewDataSource.swift */,
+				9700CBB5201CCF0C00B00989 /* GridViewDelegate.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		A1B5C96DA56971670E2CE51D76378C54 /* SOTGridView */ = {
 			isa = PBXGroup;
 			children = (
 				2B2ECB39CAADBED5A1E9CD0876131C5A /* SOTGridItem.swift */,
+				9700CBB0201CCDBE00B00989 /* GridView.swift */,
+				9700CBB2201CCE5A00B00989 /* Interfaces */,
 				9700CBAA201CC92700B00989 /* Internal */,
 				4930CE6F9370BF5EDADD38B98A8E57D2 /* SOTGridView.h */,
 				524064D8AE7603C58057D16D4D79ABE2 /* SOTGridView.m */,
@@ -321,6 +344,9 @@
 					F27424002849D94D13190033C54206B2 = {
 						LastSwiftMigration = 0900;
 					};
+					FEDE0AC3D6E8A534300F3C6B7E957FD4 = {
+						LastSwiftMigration = 0900;
+					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -347,10 +373,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9700CBAC201CC99100B00989 /* SOTGridViewLayout.swift in Sources */,
+				9700CBAC201CC99100B00989 /* SOTGridGroupsLayout.swift in Sources */,
 				E24AEAA87D52BE1C964414ACBD4854C9 /* SOTGridItem.swift in Sources */,
+				9727CB7E201D22BA009087EC /* SOTGridGroup.swift in Sources */,
 				1CF6ECDDABF5508B2093324D63CD599B /* UIViewLayout.swift in Sources */,
+				9700CBB4201CCE7500B00989 /* GridViewDataSource.swift in Sources */,
 				9BEE78D80F2819BC5918F917FF32430D /* SOTGridView-dummy.m in Sources */,
+				9700CBB6201CCF0C00B00989 /* GridViewDelegate.swift in Sources */,
+				9727CB7C201CEE35009087EC /* SOTGridViewContentLoad.swift in Sources */,
+				9700CBB1201CCDBE00B00989 /* GridView.swift in Sources */,
 				5E0E9AE70EAFA199F0C6371441F5EBA9 /* SOTGridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +630,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94CF30733F6146D38D6E0E2E6EC2552C /* Pods-GridView_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -623,6 +655,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -633,6 +666,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DAE29E5027A521A087F787100B807E33 /* Pods-GridView_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -656,6 +690,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
