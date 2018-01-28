@@ -32,7 +32,7 @@ class SOTGridItemLayoutTests: XCTestCase {
     func testVerticalAttachWithMode() {
         
         self.superview.addSubview(self.gridItem)
-        self.gridItem.attachOnSuperview(mode: SOTGridCompositionModeVertical, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        self.gridItem.attachOnSuperview(mode: .vertical, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
         
         self.checkVerticalConstraints()
     }
@@ -40,7 +40,7 @@ class SOTGridItemLayoutTests: XCTestCase {
     func testHorizontalAttachWithMode() {
         
         self.superview.addSubview(self.gridItem)
-        self.gridItem.attachOnSuperview(mode: SOTGridCompositionModeHorizontal, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        self.gridItem.attachOnSuperview(mode: .horizontal, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
         
         self.checkHorizontalConstraints()
     }
@@ -48,7 +48,7 @@ class SOTGridItemLayoutTests: XCTestCase {
     func testVerticalAttachOrghogonalWithMode() {
         
         self.superview.addSubview(self.gridItem)
-        self.gridItem.attachOrthogonalOnSuperview(mode: SOTGridCompositionModeVertical, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        self.gridItem.attachOrthogonalOnSuperview(mode: .vertical, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
         
         self.checkHorizontalConstraints()
     }
@@ -56,7 +56,7 @@ class SOTGridItemLayoutTests: XCTestCase {
     func testHorizontalAttachOrghogonalWithMode() {
         
         self.superview.addSubview(self.gridItem)
-        self.gridItem.attachOrthogonalOnSuperview(mode: SOTGridCompositionModeHorizontal, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
+        self.gridItem.attachOrthogonalOnSuperview(mode: .horizontal, contentMargins: UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20))
         
         self.checkVerticalConstraints()
     }

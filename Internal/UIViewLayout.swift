@@ -11,33 +11,27 @@ internal typealias UIViewLayout = UIView
 
 internal extension UIViewLayout {
     
-    internal func attachOnSuperview(mode: SOTGridCompositionMode, contentMargins margins: UIEdgeInsets) {
+    internal func attachOnSuperview(mode: GridView.Composition, contentMargins margins: UIEdgeInsets) {
         
         switch mode {
         
-        case SOTGridCompositionModeVertical:
+        case .vertical:
             self.attachVertical(contentMargins: margins)
         
-        case SOTGridCompositionModeHorizontal:
+        case .horizontal:
             self.attachHorizontal(contentMargins: margins)
-        
-        default:
-            break
         }
     }
 
-    internal func attachOrthogonalOnSuperview(mode: SOTGridCompositionMode, contentMargins margins: UIEdgeInsets) {
+    internal func attachOrthogonalOnSuperview(mode: GridView.Composition, contentMargins margins: UIEdgeInsets) {
         
         switch mode {
             
-        case SOTGridCompositionModeHorizontal:
+        case .horizontal:
             self.attachVertical(contentMargins: margins)
             
-        case SOTGridCompositionModeVertical:
+        case .vertical:
             self.attachHorizontal(contentMargins: margins)
-            
-        default:
-            break
         }
     }
     

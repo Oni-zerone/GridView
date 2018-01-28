@@ -90,5 +90,4 @@ class SOTGridGroupLayoutTests: XCTestCase {
         XCTAssert((constraint.firstItem as? UIView) == self.gridView.groups.first, "firstItem should be first column")
         XCTAssert((constraint.secondItem as? UIView) == self.gridView.groups.last, "secondItem should be second column")
     }
-    
 }
