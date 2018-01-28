@@ -157,7 +157,8 @@
 				9727CB7A201CEDA2009087EC /* SOTGridViewContentLoad.swift */,
 				9727CB7D201D22BA009087EC /* SOTGridGroup.swift */,
 			);
-			path = Internal;
+			name = Internal;
+			path = GridView/Classes/Internal;
 			sourceTree = "<group>";
 		};
 		9700CBB2201CCE5A00B00989 /* Interfaces */ = {
@@ -166,7 +167,8 @@
 				9700CBB3201CCE7500B00989 /* GridViewDataSource.swift */,
 				9700CBB5201CCF0C00B00989 /* GridViewDelegate.swift */,
 			);
-			path = Interfaces;
+			name = Interfaces;
+			path = GridView/Classes/Interfaces;
 			sourceTree = "<group>";
 		};
 		A1B5C96DA56971670E2CE51D76378C54 /* SOTGridView */ = {

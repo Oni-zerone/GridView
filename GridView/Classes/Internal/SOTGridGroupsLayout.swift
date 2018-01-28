@@ -44,4 +44,11 @@ internal extension SOTGridGroupsLayout {
             firstGroup.heightAnchor.constraint(equalTo: group.heightAnchor).isActive = true
         }
     }
+    
+    private func attachGroup(_ group: SOTGridGroup, toGroup: SOTGridGroup) {
+    
+        
+        
+    }
+    
 }
