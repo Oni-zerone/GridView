@@ -7,7 +7,7 @@
 
 import Foundation
 
-fileprivate typealias SOTGridGroupsLayout = GridView
+private typealias SOTGridGroupsLayout = GridView
 
 internal extension SOTGridGroupsLayout {
     
@@ -90,7 +90,7 @@ internal extension SOTGridGroupsLayout {
     }
 }
 
-fileprivate typealias SOTGridGroupAttachParameters = GridView
+private typealias SOTGridGroupAttachParameters = GridView
 
 fileprivate extension SOTGridGroupAttachParameters {
     
