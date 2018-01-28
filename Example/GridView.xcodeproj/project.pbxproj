@@ -238,13 +238,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "GridView_Example" */;
 			buildPhases = (
+				97A75677201CB01E008EAA3D /* SwiftLint */,
 				462291BAB88FE8C2C6FA2B66 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				8BD90B2F2FD4495B1C0057B9 /* [CP] Embed Pods Frameworks */,
 				F884ABC884C746AFF3215CF3 /* [CP] Copy Pods Resources */,
-				97A75677201CB01E008EAA3D /* SwiftLint */,
 			);
 			buildRules = (
 			);
