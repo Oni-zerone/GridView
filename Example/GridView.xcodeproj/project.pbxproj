@@ -420,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n\nif [ \"$CI\" == true ]; then\nswiftlint lint --strict\nelse\nswiftlint\nfi\n\nelse\necho \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nexit 1\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n\n    if [ \"$CI\" == true ]; then\n\n        swiftlint lint --strict\n\n    else\n\n        swiftlint\n    fi\n\nelse\n    echo \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    exit 1\nfi";
 		};
 		D7289197131CCED18D78FEED /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

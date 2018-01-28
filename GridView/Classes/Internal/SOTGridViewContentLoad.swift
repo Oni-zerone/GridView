@@ -11,7 +11,7 @@ typealias SOTGridViewContentLoad = GridView
 
 internal extension SOTGridViewContentLoad {
     
-    func reloadContent() {
+    internal func reloadContent() {
         
     }
 }
