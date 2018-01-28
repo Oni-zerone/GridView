@@ -23,6 +23,13 @@ internal extension SOTGridGroupsLayout {
         group.attachOnSuperview(mode: self.compositionMode, contentMargins: .zero)
         self.addEqualityConstraint(forGroup: group, atIndex: index)
         
+        let previousIndex = index - 1
+        guard previousIndex >= 0, self.groups.indices.contains(previousIndex) else {
+            self.attachFirstGroup(group)
+            return
+        }
+        
+        self.attachGroup(group, toGroup: self.groups[previousIndex])
     }
     
     private func addEqualityConstraint(forGroup group: SOTGridGroup, atIndex index: Int) {
@@ -45,10 +52,15 @@ internal extension SOTGridGroupsLayout {
         }
     }
     
-    private func attachGroup(_ group: SOTGridGroup, toGroup: SOTGridGroup) {
-    
-        
+    private func attachFirstGroup(_ group: SOTGridGroup) {
         
     }
     
+    private func attachGroup(_ group: SOTGridGroup, toGroup: SOTGridGroup) {
+    
+    }
+    
+    internal attachLastGroup() {
+    
+    }
 }
