@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal typealias SOTGridGroupsLayout = GridView
+fileprivate typealias SOTGridGroupsLayout = GridView
 
 internal extension SOTGridGroupsLayout {
     
@@ -54,13 +54,67 @@ internal extension SOTGridGroupsLayout {
     
     private func attachFirstGroup(_ group: SOTGridGroup) {
         
+        NSLayoutConstraint(item: self,
+                           attribute: self.attachAttribute,
+                           relatedBy: .equal,
+                           toItem: group,
+                           attribute: self.attachAttribute,
+                           multiplier: 1,
+                           constant: 0).isActive = true
     }
     
     private func attachGroup(_ group: SOTGridGroup, toGroup: SOTGridGroup) {
     
+        NSLayoutConstraint(item: group,
+                           attribute: self.attachAttribute,
+                           relatedBy: .equal,
+                           toItem: toGroup,
+                           attribute: self.attachAttribute,
+                           multiplier: 1,
+                           constant: 0).isActive = true
     }
     
     internal func attachLastGroup() {
+
+        guard let group = self.groups.last else {
+            return
+        }
+        
+        NSLayoutConstraint(item: group,
+                           attribute: self.lastAttachAttribute,
+                           relatedBy: .equal,
+                           toItem: self,
+                           attribute: self.lastAttachAttribute,
+                           multiplier: 1,
+                           constant: 0).isActive = true
+    }
+}
+
+fileprivate typealias SOTGridGroupAttachParameters = GridView
+
+fileprivate extension SOTGridGroupAttachParameters {
     
+    fileprivate var attachAttribute: NSLayoutAttribute {
+        
+        switch self.compositionMode {
+            
+        case .vertical:
+            return .left
+            
+        case .horizontal:
+            return .top
+        }
+    }
+    
+    fileprivate var lastAttachAttribute: NSLayoutAttribute {
+        
+        switch self.compositionMode {
+        
+        case .vertical:
+            return .bottom
+        
+        case .horizontal:
+            return .right
+        }
     }
 }
